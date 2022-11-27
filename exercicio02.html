@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+     //Escreva um programa em JavaScript que leia um valor número inteiro e indique se o número 
+    //é ou não um número perfeito. Um número perfeito é aquele que é igual a soma dos seus divisores, 
+    //por exemplo, 6 (= 1 + 2 + 3). 
+
+    let num, i, soma = 0
+
+    num = Number(prompt("Digite um número inteiro: "))
+
+
+    for(i = 1; i <= num / 2; i++){
+        if(num % i == 0){
+            soma = soma + i
+        }
+    }
+
+    if(soma == num){
+        alert("É perfeito.")
+    }
+    else{
+        alert("Não é perfeito.")
+    }
+</script>

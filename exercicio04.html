@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+
+<script>
+    //A conversão de graus Fahrenheit para Celsius é obtida pela expressão:  𝐶 = 5 * (F -32) / 9. Escreva 
+    //um programa em JavaScript que calcule e escreva uma tabela de graus Celsius em função de graus 
+    //Fahrenheit que variem de 50 a 150 de 1 em 1. 
+
+    let celsius, tab, i
+
+    for (i = 1; i < 151; i++) {
+        celsius = (5 * (i - 32))/ 9
+        tab = tab + i + " = " + celsius + "\n"
+    }
+
+    console.log(tab)
+
+    //Não consegui tirar o NaN do índice 1
+
+</script>

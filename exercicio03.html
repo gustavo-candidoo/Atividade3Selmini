@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+    let num, tempo, soma = 0, media, maior = 0, menor = 0
+    let i
+
+    num = Number(prompt("Digite o número de competidores: "))
+
+    for(i = 0; i < num; i++){
+    tempo = Number(prompt("Digite respectivamente, o tempo em segundos: "))
+    if(tempo < 1){
+        tempo = Number(prompt("Digite um tempo válido: "))
+    }
+    soma = soma + tempo
+    
+    if(tempo > maior){
+        maior = tempo
+    }
+    if(tempo < menor || menor == 0){
+        menor = tempo
+    }
+
+    }
+
+    media = soma / i
+    alert("A média é de "+media.toFixed(2)+ " segundos.")
+
+    alert("O melhor tempo é de "+menor+ " segundos.")
+    alert("O pior tempo é de "+maior+ " segundos.")
+
+   
+</script>
